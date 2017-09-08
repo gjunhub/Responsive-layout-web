@@ -1,0 +1,265 @@
+body {
+	min-width: 320px;
+}
+.HTop {
+	overflow: hidden;
+	width: 100%;
+	height: 1020px;
+	background: linear-gradient(170deg,
+	rgba(91, 214, 221, 1) 4%,
+	rgba(3, 109, 237, 1)
+	);
+}
+
+.header {
+	width: 100%;
+	margin: 30px auto 0;
+}
+/*good*/
+@keyframes move {
+	0% {
+		opacity: 0; 
+		margin-left: -360px;
+	}
+}
+.goodL {
+	position: absolute;
+	top: 0;
+	right: 30px;
+	float: none;
+	width: 50%;
+	height: 450px;
+}
+.goodDetails {
+	position: absolute;
+	top: 310px;
+	left: 100%;
+	margin-left: -460px;
+	width: 487px;
+	height: 422px;
+	background-size: 487px auto;
+}
+.aside {
+	float: none;
+	width: 85%;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+@keyframes line {
+	0% {
+		opacity: 0;
+		left: 120px;
+	}
+}
+.aside p:nth-of-type(1) {
+	position: relative;
+	font-size: 12px;
+}
+.aside p:nth-of-type(1)::after {
+	content: "";
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 140px;
+	border: 1px solid #fff;
+	opacity: .7;
+	margin-left: 0;
+	animation: line .8s linear;
+}
+@keyframes bottomPlay {
+	0% {
+		opacity: 0;
+		padding-top: 34px;
+	}
+	100% {
+		opacity: 1;
+		padding-top: 0;
+	}
+}
+.aside h2 {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 34px;
+}
+@keyframes bottomPlayT {
+	0% {
+		opacity: 0;
+		padding-top: 32px;
+	}
+	100% {
+		opacity: 1;
+		padding-top: 0;
+	}
+}
+.aside p:nth-of-type(2) {
+	font-size: 28px;
+}
+@keyframes bottomPlayF {
+	0% {
+		opacity: 0;
+		padding-top: 32px;
+	}
+	100% {
+		opacity: 1;
+		padding-top: 0;
+	}
+}
+.aside p:nth-of-type(3) { 	
+	font-size: 28px;
+	line-height: 32px;
+}
+.VedioLink {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+	line-height: 20px;
+	padding: 0 30px 25px 0;
+	letter-spacing: 1px;
+}
+.aside p:nth-of-type(5) {
+	font-size: 15px;
+	line-height: 26px;
+	width: 100%;
+}
+.bts {
+	font-size: 12px;
+	padding-top: 38px;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+.bts .price {
+	position: relative;
+	z-index: 18;
+	width: auto;
+	line-height: 42px;
+	text-align: center;
+}
+.bts .App {
+	position: relative;
+	z-index: 19;
+	width: auto;
+	line-height: 42px;
+	text-align: center;
+}
+/*middle*/
+/*水杯下方斜切的三角*/
+.Skews {
+	position: relative;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	border-width: 420px 0 0 1400px;
+	border-style: solid;
+	border-color: transparent transparent transparent #fff;
+}
+.Mwrap {
+	position: relative;
+	z-index: 6;
+	top: -200px;
+	left: 0;
+	width: 85%;
+	margin: 0 auto;
+}
+.download p:nth-of-type(2) {
+	font-size: 30px;
+	line-height: 34px;
+}
+.download p:nth-of-type(3) {
+	font-size: 28px;
+	line-height: 32px;
+}
+.appStore {
+	float: left;
+	width: 113px;
+	height: 40px;
+	padding-right: 10px;
+	background: url(../img/appStore.png) no-repeat;
+	background-size: 113px auto;
+	transition: .3s background;
+}
+.appStore:hover {
+	background: url(../img/appStore-h.png) no-repeat 1px ;
+	background-size: 113px auto;
+}
+.googelPlay {
+	float: left;
+	width: 113px;
+	height: 40px;
+	background: url(../img/googelPlay.png) no-repeat;
+	background-size: 113px auto;
+	transition: .3s background;
+}
+.googelPlay:hover {
+	background: url(../img/googelPlay-h.png) no-repeat;
+	background-size: 113px auto;
+}
+.finger {
+	position: absolute;
+	z-index: 8;
+	top: 240px;
+	/*left: 306px;*/
+	left: 100%;
+	margin-left: -528px;
+	width: 350px;
+	height: 612px;
+	background: url(../img/pointing-hand.png);
+	background-size: 350px auto;
+}
+.handheld {
+	position: absolute;
+	z-index: 7;
+	top: -8px;
+	/*left: 600px;*/
+	left: 100%;
+	margin-left: -310px;
+	width: 340px;
+	height: 617px;
+	background: url(../img/phone-hand-fr.png);
+	background-size: 340px auto;
+}
+.finger {
+	position: absolute;
+	z-index: 8;
+	top: 528px;
+	/*left: 306px;*/
+	left: 100%;
+	margin-left: -330px;
+	width: 210px;
+	height: 368px;
+	background: url(../img/pointing-hand.png);
+	background-size: 210px auto;
+}
+.handheld {
+	position: absolute;
+	z-index: 7;
+	top: 385px;
+	/*left: 600px;*/
+	left: 100%;
+	margin-left: -200px;
+	width: 200px;
+	height: 363px;
+	background: url(../img/phone-hand-fr.png);
+	background-size: 200px auto;
+}
+/*picture主图部分*/
+.picture {
+	position: relative;
+	z-index: 30;
+	top: -150px;
+	width: 100%;
+	height: 500px;
+	background: url(../img/blue-in-a-pool.jpg) 
+	no-repeat center bottom;
+	background-size: cover;
+	overflow: hidden;
+}
+.picture .Skews {
+	position: relative;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	border-width: 0 0 300px 800px;
+	border-style: solid;
+	border-color: transparent transparent transparent #fff;
+}

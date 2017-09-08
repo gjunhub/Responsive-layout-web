@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width,user-scalable=no"/>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="css/index-lg.css">
+<link rel="stylesheet" href="css/index-md.css" media="(max-width:979px)">
+<link rel="stylesheet" href="css/index-sm.css" media="(max-width:767px)">
+<link rel="stylesheet" href="css/index-xs.css" media="(max-width:479px)">
+</head>
+<script>
+
+window.onload = function () {
+	var oHideNav = document.getElementById('hideNav');
+	var oDelete = document.getElementById('delete');
+	var oMenuIco = document.getElementById('menuIco');
+	var oMiddle = document.getElementById('middle');
+	var oIntroduce = document.getElementById('introduce');
+	var oMainText = document.getElementById('mainText');
+	var oPicture = document.getElementById('picture');
+	var oSellPrice = document.getElementById('sellPrice');
+	var oFooter = document.getElementById('footer');
+
+	oMenuIco.onclick = function (){
+		oHideNav.style.display = 'block';
+		oMenuIco.style.display = 'none';
+		oDelete.style.display = 'block';
+		oMiddle.style.display = 'none';
+		oIntroduce.style.display = 'none';
+		oMainText.style.display = 'none';
+		oPicture.style.display = 'none';
+		oSellPrice.style.display = 'none';
+		oFooter.style.display = 'none';
+	};
+	oDelete.onclick = function() {
+		oHideNav.style.display = 'none';
+		oMenuIco.style.display = 'block';
+		oDelete.style.display = 'none';
+		oMiddle.style.display = 'block';
+		oIntroduce.style.display = 'block';
+		oMainText.style.display = 'block';
+		oPicture.style.display = 'block';
+		oSellPrice.style.display = 'block';
+		oFooter.style.display = 'block';
+	};
+};
+
+</script>
+
+<body>
+<section class="HTop">
+	<div class="TopLight">
+		<video class="light" style="width: 600px;height: 400px;" autoPlay loop>
+		<!--<canvas width="864" height="170" class=""></canvas> -->
+			<!-- <source src="img/halo.mp4"> -->
+		</video>
+	</div>
+	<header class="header clearFix">
+		<h1 class="logo">
+			<img src="img/logo.png" alt="">
+		</h1>
+		<label class="menu" id="menu">
+			<input type="checkbox" name="checked">
+			<strong id="menuIco"></strong>
+			<span id="delete"></span>
+		</label>
+		</div>
+		<nav class="nav">
+			<a href="javascript:;">blue</a>
+			<a href="javascript:;">REVENDEUR</a>
+			<a href="javascript:;">FAQ</a>
+			<a href="javascript:;">PRESEE</a>
+			<a href="javascript:;">A PROPOS</a>
+			<a href="javascript:;">CONTACT</a>
+		</nav>
+		<ul class="hideNav" id="hideNav">
+			<li>
+				<a href="javascript:;">blue</a>
+			</li>
+			<li>
+				<a href="javascript:;">Revendeur</a>
+			</li>
+			<li>
+				<a href="javascript:;">FAQ</a>
+			</li>
+			<li>
+				<a href="javascript:;">Presse</a>
+			</li>
+			<li>
+				<a href="javascript:;">A prepos</a>
+			</li>
+			<li>
+				<a href="javascript:;">Contact</a>
+			</li>
+			<li>
+				<a href="javascript:;">Acheter</a>
+			</li>
+			<li>
+				<a href="javascript:;">EN</a>
+			</li>
+		</ul>
+		<div class="pay">
+			<a href="javascript:;">ACHETER</a>
+		</div>
+		<div class="language">
+			<input type="checkbox" name="checkbox" id="checkbox">
+			<label for="checkbox">FR</label>
+			<a href="javascript:;">EN</a>
+		</div>
+	</header>
+	<div class="goods clearFix">
+		<!-- <div class="video">
+		</div> -->
+		<div class="goodL">
+			<div class="goodDetails">
+			</div>
+		</div>
+		<aside class="aside">
+			<p>UNE INNOVATION DE RLLOT LABS</p>
+			<h2>blue by Riiot</h2>
+			<p>L'analyseur de piscine</p>
+			<p>intelligent</p>
+			<p class="VedioLink">REGARDER LA VIDEO</p>
+			<p>
+				<strong>Blue by Riiot vous aide a prendre de votre piscine 24h/24,meme quand vous netes pas chez vous.</strong>finies les inquietudes au sujet de piscine
+			</p>
+			<div class="bts clearFix">
+				<a href="javascript:;" class="price">449$ TTC</a>
+				<a href="javascript:;" class="App">DECOVRIR L'APP</a>
+			</div>
+		</aside>
+	</div>
+</section>
+<section class="middle" id="middle">
+	<div class="Skews">
+	</div>
+	<div class="Mwrap clearFix">
+		<div class="download">
+			<p>GRÂCE À BLUE BY RIIOT</p>
+			<p>Suivez la <span class="bigFont">qualite</br>et la temperature</span></p>
+			<p>de l'eau de votre </br>piscine</p>
+			<p>Par l’intermédiaire d’une application, <strong class="hugeFont">blue by Riiot</strong> vous communique en temps réel si vous pouvez vous baigner dans votre piscine ou vous suggère des solutions personnalisées.</p>
+			<div class="downIco clearFix">
+				<a href="javascript:;" class="appStore"></a>
+				<a href="javascript:;" class="googelPlay"></a>
+			</div>
+		<div class="finger">
+		</div>
+		<div class="handheld">
+		</div>
+	</div>
+	</div>
+</section>
+<section class="introduce clearFix" id="introduce">
+	<div class="Iwrap">
+		<div class="introduceL">
+			<input type="checkbox" name="" id="Previous">
+			<label for="Previous" class="labelT">
+				Previous
+				<span></span>
+			</label>
+			<input type="checkbox" name="" id="Next">
+			<label for="Next" class="labelB">
+				Next
+				<span></span>
+				</label>
+			<div class="phone">
+				<div class="turnPage">
+					<ul class="turnPageList clearFix">
+						<li>
+							<img src="img/ph-fr.png" alt="">
+						</li>
+						<li>
+							<img src="img/notifications-fr.png" alt="">
+						</li>
+						<li>
+							<img src="img/timemoney-fr.png" alt="">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="appPage clearFix">
+				<span>
+					<img src="img/notifications-fr.png" alt="">
+				</span>
+				<span>
+					<img src="img/timemoney-fr.png" alt="">
+				</span>
+				<span>
+					<img src="img/ph-fr.png" alt="">
+				</span>
+			</div>
+		</div>
+		<div class="introduceR">
+			<h2>Vous économisez </h2>
+			<p>du temps et de l’argent</p>
+			<div class="pageIco clearFix">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<p>Une mauvaise manipulation des produits chimiques peut provoquer un gaspillage et des réparations inutiles et donc du temps et de l’argent. Grâce à un guide étape par étape conçu par les professionnels de la piscine, le diagnostic des problèmes peut être effectué en un rien de temps.</p>
+		</div>
+	</div>
+</section>
+<section class="mainText" id="mainText">
+	<div class="Mxwrap">
+		<div class="TextImgs clearFix">
+			<div class="describe">
+				<h2>Découvrez Blue sensor</h2>
+				<p>une sonde 4 en 1</p>
+				<p>La sonde de piscine spécialement conçue par Riiot Labs intègre des technologies éprouvées et utilisées à grande échelle ces 10 dernières années.  Cette sonde est capable de mesurer de façon précise<strong> la température, le pH, le rédox & la salinité de l’eau.</strong></p>
+			</div>
+			<div class="box">
+				<div class="boxImgs">
+					<img src="img/blue-sensor-fr.jpg" alt=""/>
+				</div>
+			</div>
+		</div>
+		<div class="TextImgs clearFix">
+			<div class="describe">
+				<h2>Mesures continues et fiables de</h2>
+				<p>la qualité de l’eau</p>
+				<p><strong>blue by Riiot</strong> est pourvu d’une intelligence innovante et de processeurs de précision qui visent une qualité de l’eau optimale. Il offre un niveau de précision similaire à celui utilisé dans le secteur de la santé et de l’aéronautique.</p>
+			</div>
+			<div class="box">
+				<div class="boxImgs">
+					<img src="img/water-quality.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="TextImgs clearFix">
+			<div class="describe">
+				<h2>splited-line</h2>
+				<p>toutes les piscines</p>
+				<p>Depuis sa conception, Riiot Labs ont développé le design de Blue afin qu’il s’adapte à tous les types de piscines et équipements. <strong>blue by Riiot </strong>est actuellement compatible avec n’importe quel type de piscine.</p>
+			</div>
+			<div class="box">
+				<div class="boxImgs">
+					<img src="img/pools.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="TextImgs clearFix">
+			<div class="describe">
+				<p>Auto-connecté</p>
+				<p><strong>blue by Riiot</strong>  est un produit <em>Sigfox</em> , une technologie sans fil éprouvée, efficace et fiable qui n’interfère pas avec votre réseau domestique WiFi. Blue possède également la technologie <em>Bluetooth</em> pour un transfert de données immédiat.</p>
+			</div>
+			<div class="box">
+				<div class="boxImgs">
+					<img src="img/sigfox-bluetooth.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="picture" id="picture">
+	<div class="Skews">
+	</div>
+</section>
+<section class="sellPrice" id="sellPrice">
+	<div class="payMoney clearFix">
+		<span>blue by Riiot</span>
+		<strong>449,00 €</strong>
+		<a href="javascript:;">ACHETER</a>
+	</div>
+	<span class="vertiacl"></span>
+</section>
+<section class="footer" id="footer">
+	<div class="FTop">
+		<h2>Restez informé</h2>
+		<form action="" class="address">
+			<input type="text" name="" placeholder="Entrez votre adresse électronique">
+			<span>JE M' INSCRIS</span>
+		</form>
+	</div>
+	<div class="FBottom">
+		<ul class="footerNav clearFix">
+			<li>
+				<h3>Société</h3>
+				<a href="javacript:;">
+					<span>A propos</span>
+				</a>
+				<a href="javacript:;">
+					<span>Jobs</span>
+				</a>
+			</li>
+			<li>
+				<h3>Produits</h3>
+				<a href="javacript:;">
+					<span>Blue</span>
+				</a>
+				<a href="javacript:;">
+					<span>FAQ</span>
+				</a>
+				<a href="javascript:;">
+					<span>Support</span>
+				</a>
+			</li>
+			<li>
+				<h3>Business</h3>
+				<a href="javacript:;">
+					<span>Devenir distributeur</span>
+				</a>
+			</li>
+			<li class="transmit">
+				<h3>Nous suire</h3>
+				<a href="javacript:;">Twitter</a>
+				<span></span>
+				<a href="javacript:;">Facebook</a>
+				<span></span>
+				<a href="javascript:;">Linkedin</a>
+				<span></span>
+			</li>
+		</ul>
+		<div class="supervice clearFix">
+			<span>© 2017 Riiot Labs SA</span>
+			<a href="javascript:;">Conditions générales de vente</a>
+			<a href="javascript:;">Politique de respect de la vie privée</a>
+		</div>
+	</div>
+</section>
+</body>
+</html>
