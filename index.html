@@ -9,44 +9,6 @@
 <link rel="stylesheet" href="css/index-sm.css" media="(max-width:767px)">
 <link rel="stylesheet" href="css/index-xs.css" media="(max-width:479px)">
 </head>
-<script>
-
-window.onload = function () {
-	var oHideNav = document.getElementById('hideNav');
-	var oDelete = document.getElementById('delete');
-	var oMenuIco = document.getElementById('menuIco');
-	var oMiddle = document.getElementById('middle');
-	var oIntroduce = document.getElementById('introduce');
-	var oMainText = document.getElementById('mainText');
-	var oPicture = document.getElementById('picture');
-	var oSellPrice = document.getElementById('sellPrice');
-	var oFooter = document.getElementById('footer');
-
-	oMenuIco.onclick = function (){
-		oHideNav.style.display = 'block';
-		oMenuIco.style.display = 'none';
-		oDelete.style.display = 'block';
-		oMiddle.style.display = 'none';
-		oIntroduce.style.display = 'none';
-		oMainText.style.display = 'none';
-		oPicture.style.display = 'none';
-		oSellPrice.style.display = 'none';
-		oFooter.style.display = 'none';
-	};
-	oDelete.onclick = function() {
-		oHideNav.style.display = 'none';
-		oMenuIco.style.display = 'block';
-		oDelete.style.display = 'none';
-		oMiddle.style.display = 'block';
-		oIntroduce.style.display = 'block';
-		oMainText.style.display = 'block';
-		oPicture.style.display = 'block';
-		oSellPrice.style.display = 'block';
-		oFooter.style.display = 'block';
-	};
-};
-
-</script>
 
 <body>
 <section class="HTop">
@@ -177,30 +139,66 @@ window.onload = function () {
 						<li>
 							<img src="img/timemoney-fr.png" alt="">
 						</li>
+						<li>
+							<img src="img/ph-fr.png" alt="">
+						</li>
+						<li>
+							<img src="img/notifications-fr.png" alt="">
+						</li>
+						<li>
+							<img src="img/timemoney-fr.png" alt="">
+						</li>
 					</ul>
 				</div>
 			</div>
 			<div class="appPage clearFix">
-				<span>
-					<img src="img/notifications-fr.png" alt="">
-				</span>
-				<span>
-					<img src="img/timemoney-fr.png" alt="">
-				</span>
-				<span>
-					<img src="img/ph-fr.png" alt="">
-				</span>
+				<div class="clearFix">
+					<span>
+						<img src="img/ph-fr.png" alt="">
+					</span>
+					<span>
+						<img src="img/notifications-fr.png" alt="">
+					</span>
+					<span>
+						<img src="img/timemoney-fr.png" alt="">
+					</span>
+					<span>
+						<img src="img/ph-fr.png" alt="">
+					</span>
+					<span>
+						<img src="img/notifications-fr.png" alt="">
+					</span>
+					<span>
+						<img src="img/timemoney-fr.png" alt="">
+					</span>
+				</div>
 			</div>
 		</div>
 		<div class="introduceR">
 			<h2>Vous économisez </h2>
-			<p>du temps et de l’argent</p>
+			<p class="introduceRDesc">du temps et de l’argent</p>
 			<div class="pageIco clearFix">
+				<span class="pig"></span>
+				<span></span>
+				<span></span>
 				<span></span>
 				<span></span>
 				<span></span>
 			</div>
-			<p>Une mauvaise manipulation des produits chimiques peut provoquer un gaspillage et des réparations inutiles et donc du temps et de l’argent. Grâce à un guide étape par étape conçu par les professionnels de la piscine, le diagnostic des problèmes peut être effectué en un rien de temps.</p>
+			<div class="introduceRText">
+				<div>
+					<p>Une mauvaise manipulation des produits chimiques peut provoquer un gaspillage et des réparations inutiles et donc du temps et de l’argent. Grâce à un guide étape par étape conçu par les professionnels de la piscine, le diagnostic des problèmes peut être effectué en un rien de temps.</p>
+
+					<p>est pourvu d’une intelligence innovante et de processeurs de précision qui visent une qualité de l’eau optimale. Il offre un niveau de précision similaire à celui utilisé dans le secteur de la santé et de l’aéronautique.</p>
+
+					<p>technologie sans fil éprouvée, efficace et fiable qui n’interfère pas avec votre réseau domestique WiFi. Blue possède également la technologie <em>Bluetooth</em> pour un transfert de données immédiat.</p>
+					<p>Une mauvaise manipulation des produits chimiques peut provoquer un gaspillage et des réparations inutiles et donc du temps et de l’argent. Grâce à un guide étape par étape conçu par les professionnels de la piscine, le diagnostic des problèmes peut être effectué en un rien de temps.</p>
+
+					<p>est pourvu d’une intelligence innovante et de processeurs de précision qui visent une qualité de l’eau optimale. Il offre un niveau de précision similaire à celui utilisé dans le secteur de la santé et de l’aéronautique.</p>
+
+					<p>technologie sans fil éprouvée, efficace et fiable qui n’interfère pas avec votre réseau domestique WiFi. Blue possède également la technologie <em>Bluetooth</em> pour un transfert de données immédiat.</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -322,4 +320,6 @@ window.onload = function () {
 	</div>
 </section>
 </body>
+<script src="./js/m.touch.js"></script>
+<script src="./js/index.js"></script>
 </html>

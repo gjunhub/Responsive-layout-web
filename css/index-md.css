@@ -327,7 +327,7 @@
 	font-weight: normal;
 	line-height: 40px;
 }
-.introduceR p:nth-of-type(1) {
+.introduceR>p:nth-of-type(1) {
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 42px;
@@ -335,14 +335,33 @@
 .pageIco {
 	display: none;
 }
-.introduceR p:nth-of-type(1) {
+.introduceR>p:nth-of-type(1) {
 	font-size: 34px;
 	font-weight: 700;
 	line-height: 38px;
 }
-.introduceR p:nth-of-type(2) {
+.introduceR .introduceRText {
+	font-size: 18px;
 	width: 100%;
 	padding: 28px 0 0 0;
+}
+.introduceRText p {
+	left: 0;
+}
+.introduceRText p:nth-of-type(2) {
+	left: 18.2%;
+}
+.introduceRText p:nth-of-type(3) {
+	left: 36.5%;
+}
+.introduceRText p:nth-of-type(4) {
+	left: 54.7%;
+}
+.introduceRText p:nth-of-type(5) {
+	left: 72.9%;
+}
+.introduceRText p:nth-of-type(6) {
+	left: 91%;
 }
 /*mainText代码开始*/
 .mainText {
