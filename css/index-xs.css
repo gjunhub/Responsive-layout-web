@@ -232,7 +232,7 @@ body {
 }
 .handheld {
 	position: absolute;
-	z-index: 7;
+	z-index: 5;
 	top: -8px;
 	/*left: 600px;*/
 	left: 100%;

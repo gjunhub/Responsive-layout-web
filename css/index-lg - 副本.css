@@ -432,14 +432,13 @@ input {
 	width: 50%;
 }
 .download p {
-	opacity: 1;
+	display: none;
 }
 .download p:nth-of-type(1) {
 	font-size: 12px;
 	line-height: 1;
 	padding-bottom: 36px;
 	color: #b7c2ca;
-	margin-left: -120px;
 }
 .download p:nth-of-type(1)::after {
 	content: "";
@@ -453,7 +452,6 @@ input {
 	font-size: 48px;
 	line-height: 52px;
 	color: #036ded;
-	margin-top: 60px;
 }
 .bigFont {
 	font-weight: 700;
@@ -462,7 +460,6 @@ input {
 	font-size: 48px;
 	line-height: 50px;
 	color: #036ded;
-	margin-top: 60px;
 }
 .download p:nth-of-type(4) {
 	font-size: 16px;
@@ -470,18 +467,16 @@ input {
 	padding: 28px 30px 28px 0;
 	/*box-sizing: border-box;*/
 	color: #6f8595;
-	margin-top: 60px;
 }
 .hugeFont {
 	font-weight: 700;
 	color: #6f8595;
 }
 .downIco {
-	opacity: 0;
+	display: none;
 	position: relative;
 	z-index: 13;
 	padding-bottom: 240px;
-	margin-top: 60px;
 }
 .appStore {
 	float: left;
@@ -505,7 +500,7 @@ input {
 	background: url(../img/googelPlay-h.png) no-repeat;
 }
 .finger {
-	opacity: 0;
+	display: none;
 	position: absolute;
 	z-index: 8;
 	top: 278px;
@@ -515,15 +510,14 @@ input {
 	width: 463px;
 	height: 809px;
 	background: url(../img/pointing-hand.png);
-	margin-top: 120px;
 }
 .handheld {
-	opacity: 0;
+	display: none;
 	position: absolute;
 	z-index: 7;
 	top: -32px;
-	/*left: 1060px;*/
-	left: 128%;
+	/*left: 600px;*/
+	left: 100%;
 	margin-left: -340px;
 	width: 431px;
 	height: 782px;
@@ -555,10 +549,9 @@ input {
 	display: none;
 }
 .labelT {
-    opacity: 0;
 	position: absolute;
 	z-index: 32;
-	top: 160px;
+	top: 220px;
 	left: 370px;
 	width: 60px;
 	padding-top: 60px;
@@ -597,10 +590,9 @@ input {
 	transform: scale(1.1);
 }
 .labelB {
-    opacity: 0;
 	position: absolute;
 	z-index: 32;
-	top: 360px;
+	top: 300px;
 	left: 370px;
 	width: 60px;
 	padding-top: 60px;
@@ -637,24 +629,23 @@ input {
 	opacity: 1;
 	transform: scale(1.1);
 }
-/*// #Previous:checked ~ .appPage {*/
-/*// 	transform: translateX(-210px);*/
-/*// }*/
-/*// #Next:checked ~ .appPage {*/
-/*// 	transform: translateX(0px);*/
-/*// }*/
-/*// #Previous:checked ~ .phone .turnPageList {*/
-/*// 	transform: translateX(-218px);*/
-/*// }*/
-/*// #Next:checked ~ .phone .turnPageList {*/
-/*// 	transform: translateX(0);*/
-/*// }*/
+// #Previous:checked ~ .appPage {
+// 	transform: translateX(-210px);
+// }
+// #Next:checked ~ .appPage {
+// 	transform: translateX(0px);
+// }
+// #Previous:checked ~ .phone .turnPageList {
+// 	transform: translateX(-218px);
+// }
+// #Next:checked ~ .phone .turnPageList {
+// 	transform: translateX(0);
+// }
 .introduceL .phone {
-    opacity: 0;
 	position: absolute;
 	z-index: 30;
 	top: 124px;
-	left: 60%;
+	left: 34.2%;
 	width: 658px;
 	height: 562px;
 	background: url(../img/iphone-white.png) no-repeat;
@@ -672,7 +663,7 @@ input {
 	position: relative;
 	z-index: 28;
 	top: 195px;
-	left: -15%;
+	left: 10%;
 	width: 200px;
 	height: 355px;
 	margin-left: 32px;
@@ -680,7 +671,6 @@ input {
 	opacity: .75;
 	overflow: hidden;
 	transition: .7s transform ease-in-out;
-    opacity: 0;
 }
 .appPage div {
 	position: absolute;
@@ -725,23 +715,17 @@ input {
 	overflow: hidden;
 }
 .introduceR h2 {
-    opacity: 0;
 	margin-top: 210px;
-	margin-left: 100px;
 	font-size: 40px;
 	font-weight: normal;
 	line-height: 48px;
 }
 .introduceR>p:nth-of-type(1) {
-    opacity: 0;
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 42px;
-    margin-top: 80px;
 }
 .pageIco {
-    opacity: 0;
-    margin-top: 80px;
 	padding: 24px 0 0 24px;
 }
 .pageIco span {
@@ -760,8 +744,6 @@ input {
 	background: url(../img/pig.png);
 }
 .introduceR .introduceRText {
-    opacity: 0;
-    margin-top: 80px;
 	position: relative;
 	font-size: 18px;
 	line-height: 28px;
@@ -849,7 +831,7 @@ input {
 .TextImgs:nth-of-type(1) .boxImgs img {
 	width: 400px;
 	height: 560px;
-	margin-top: 0;
+	/*margin-top: -100px;*/
 }
 .describe h2 {
 	font-size: 30px;
@@ -883,7 +865,7 @@ input {
 }
 .TextImgs:nth-of-type(2) .boxImgs img {
 	width: 390px;
-	margin-top: -120px;
+	margin-top: -200px;
 }
 .TextImgs:nth-of-type(2) .describe {
 	text-align: right;
@@ -918,7 +900,7 @@ input {
 }
 .TextImgs:nth-of-type(3) .boxImgs img {
 	position: absolute;
-	top: 0;
+	top: 50px;
 	left: 0;
 }
 .TextImgs:nth-of-type(3) .describe {
@@ -952,7 +934,6 @@ input {
 }
 .TextImgs:nth-of-type(4) .box .boxImgs img {
 	width: 200px;
-	margin-top: 0;
 }
 /*picture主图部分*/
 .picture {
@@ -1028,7 +1009,7 @@ input {
 	position: absolute;
 	z-index: -1;
 	top: 0;
-	left: -128%;
+	left: -127%;
 	width: 122%;
 	height: 100%;
 	background: #fff;
@@ -1040,7 +1021,7 @@ input {
 	color: #036ded;
 }
 .payMoney a:hover::after {
-	left: -15%;
+	left: -16%;
 }
 /*footer底部代码开始*/
 .footer {
