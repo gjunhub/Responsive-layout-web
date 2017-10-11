@@ -31,10 +31,14 @@
 
 	visionView();
 
-// 	window.addEventListener('resize',() => {
-// 		visionView();
-//
-// });
+	window.addEventListener('resize',() => {
+		if(document.documentElement.clientWidth <= 767) {
+			labelT.style.opacity = labelB.style.opacity = 0;
+		} else if(document.documentElement.clientWidth <= 979) {
+			labelB.style.top = labelT.style.top = 300 + 'px';
+		}
+
+});
 
 
 	function visionView() {
