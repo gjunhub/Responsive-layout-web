@@ -28,15 +28,22 @@
 	var pools = TextImgs[2].querySelector('img');
 	var sigfox = TextImgs[3].querySelector('img');
 
-
 	visionView();
 
-// 	window.addEventListener('resize',() => {
-// 		visionView();
-//
-// });
+	window.addEventListener('resize',() => {
 
+		if(document.documentElement.clientWidth < 499) {
+			labelT.style.top = labelB.style.top = 420 + 'px';
+			labelT.style.left = 50 + 'px';
+			labelB.style.left = 150 + 'px';
+		} else if(document.documentElement.clientWidth <= 979
+			&& document.documentElement.clientWidth > 500) {
+			
+			labelB.style.top = labelT.style.top = 300 + 'px';
+		}
+	});
 
+	visionView();
 	function visionView() {
 		//滚轮滑到第二区域之后 减240~360px，这样出现视觉差才比较舒服,不会很突兀;
 		var MwrapRect = Mwrap.getBoundingClientRect().top - 360;
@@ -170,11 +177,16 @@
 			//第三屏
 			var introduceLWidth = Iwrap.querySelector('.introduceL').offsetWidth;
 console.log(introduceLWidth,'introduceLWidth');
+		
 			if(scrollY >= IwrapRect) {
-				startMove({
+				 
+				threeScreen();
+
+				function threeScreen(a=220,b=300) {
+					startMove({
 					el: labelT,
 					target: {
-						top: 220,
+						top: a,
 						opacity: 100
 					},
 					time: 800,
@@ -184,7 +196,7 @@ console.log(introduceLWidth,'introduceLWidth');
 							startMove({
 								el: labelB,
 								target: {
-									top: 300,
+									top: b,
 									opacity: 100
 								},
 								time: 800,
@@ -219,6 +231,7 @@ console.log(introduceLWidth,'introduceLWidth');
 						},100);
 					}
 				});
+				}
 
 				startMove({
 					el: phoneTitle,
